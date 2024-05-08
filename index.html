@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Quiz app</title>
+</head>
+<body>
+    <!-- Header page -->
+    <div class="container">
+        <div class="wrapper">
+            <h1 class="title" id="question">Question</h1>
+            <ul class="list" id="answers">
+                <li class="item ">Answer</li>
+                <li class="item">Answer</li>
+                <li class="item">Answer</li>
+                <li class="item ">Answer</li>
+            </ul>
+            <p class="text"> -/- </p>
+            <button class="button" id="next-btn">Next</button>
+        </div>
+    </div>
+
+    <!-- Modal page -->
+    <div class="modal hide">
+        <div class="container">
+            <h1 class="modal-title">You answered question correctly</h1>
+            <button class="button" id="reset-btn">Restart</button>
+        </div>
+    </div>
+
+    <!-- Loader, spinner page -->
+    <div class="loader hide">
+        <div class="loader-wrapper"></div>
+    </div>
+
+    <!-- Connect JavaScript -->
+    <script src="./app.js"></script>
+</body>
+</html>
